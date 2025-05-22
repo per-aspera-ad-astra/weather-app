@@ -6,12 +6,6 @@ import { setUnits } from '../utils/setUnits';
 import { formatUnixTime } from '../utils/formatTime';
 
 const AdditionalInfo = ({ weather, units }) => {
-  const dateOptions = {
-    hour: '2-digit',
-    minute: '2-digit',
-    hour12: false,
-  };
-
   return (
     <div className='additional-info'>
       <div className='additional-info__item'>
