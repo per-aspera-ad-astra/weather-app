@@ -34,11 +34,9 @@ const AdditionalInfo = ({ weather, units }) => {
       </div>
       <div className='additional-info__item'>
         <span className='additional-info__item-top'>
-          {' '}
           <FaArrowUp size={18} /> Max
         </span>
         <span>
-          {' '}
           {Math.round(weather.main.temp_max)}°{setUnits(units, 'C', 'F')}
         </span>
       </div>

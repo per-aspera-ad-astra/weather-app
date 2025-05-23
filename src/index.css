@@ -7,6 +7,7 @@
   --bg-secondary-hover: #e0e0e0;
   --color-base: #fff;
   --color-secondary: #828282;
+  --color-error: #f32e2e;
 
   font: 400 16px/1.2 var(--font-base);
   font-synthesis: none;
@@ -127,20 +128,22 @@ p {
 }
 
 .error-message {
+  width: 100%;
   position: absolute;
   left: 50%;
   transform: translateX(-50%);
   top: calc(100% + 5px);
   text-align: center;
-  color: rgb(243, 46, 46);
+  color: var(--color-error);
+  font-size: 14px;
 }
 
 .units-btn {
-  padding: 5px 10px;
+  padding: 10px;
   color: var(--color-secondary);
   background: var(--bg-secondary);
   border: 0;
-  border-radius: 15px/50%;
+  border-radius: 20px/50%;
   font-family: inherit;
   font-size: 14px;
   cursor: pointer;

@@ -1,6 +1,15 @@
-import { FaLocationArrow } from 'react-icons/fa';
+import { LiaLocationArrowSolid } from 'react-icons/lia';
 
-const windDirections = ['N', 'NE', 'E', 'SE', 'S', 'SW', 'W', 'NW'];
+const windDirections = [
+  'North',
+  'North-East',
+  'East',
+  'South-East',
+  'South',
+  'South-West',
+  'West',
+  'North-West',
+];
 
 const getDirectionLabel = (deg) => {
   return windDirections[Math.round(deg / 45) % 8];
@@ -12,10 +21,10 @@ const WindDirection = ({ deg }) => {
   return (
     <>
       <span className='additional-info__item-top'>
-        <FaLocationArrow
-          size={18}
+        <LiaLocationArrowSolid
+          size={22}
           style={{
-            transform: `rotate(${deg}deg)`,
+            transform: `rotate(${deg + 180}deg)`,
             transition: 'transform 0.3s',
           }}
         />
